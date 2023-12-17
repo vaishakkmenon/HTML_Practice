@@ -1,0 +1,9 @@
+/* Changed font size */
+html{
+    font-size:  22px
+}
+/* Changed background and text color */
+body {
+    background-color: #333;
+    color: whitesmoke;
+}
