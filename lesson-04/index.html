@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Vaishak Menon">
+        <meta name="description" content="This page is an attempt at learning HTML for projects like my own resume website.">
+        <title>My First Webpage</title>
+        <link rel="icon" href="platypus-noback.ico" type="image/x-icon"> <!-- rel: relation - How does this relate to the webpage -->
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+    </head>
+
+    <body>
+        <h1>Hello World!</h1>
+        
+        <hr>
+        
+        <h2>I'm ready to learn HTML!</h2>
+        <p>This is my first web page.</p>
+
+        <h3>My Daily Schedule:</h3>
+        <p>4 Classes</p>
+        <p><strong>Food:</strong></p>
+        <ol>
+            <li><strong>Breakfast</strong></li>
+            <li><em>Lunch</em></li>
+            <li>Dinner</li>
+        </ol>
+        <p><strong>Other:</strong></p>
+        <ol>
+            <li>Learning about Kubernetes</li>
+            <li>Practice Programming</li>
+        </ol>    
+        <hr>
+
+        <h2>I'm ready to learn CSS</h2>
+        <p>What does <abbr title="Cascading Style Sheets">CSS</abbr> even stand for?</p>
+        <p>Does some cool stuff to HTML</p>
+
+        <h3>Projects I want to do:</h3>
+        <dl>
+            <dt>Sudoku</dt>
+            <dd>Small web application project that displays Javascript abilities</dd>
+
+            <dt>Resume Portfolio</dt>
+            <dd>Personalized website to display my resume and projects</dd>
+            
+            <dt>Cloud Projects</dt>
+            <dd>I have experience with GCP, need to work with AWS</dd>
+        </dl>
+
+        <h3>Languages I want to learn:</h3>
+        
+        <ul>
+            <li><p>&nbsp;&nbsp;&nbsp;Javascript</p></li>
+            <li><p>&nbsp;&nbsp;&nbsp;Python</p></li>
+            <li><p>&nbsp;&nbsp;&nbsp;Heard this place teaches Swift well:</p>
+                <address>
+                    &nbsp;&nbsp;&nbsp;One Apple Park Way
+                    <br>&nbsp;&nbsp;&nbsp;Cupertino, CA
+                    <br>&nbsp;&nbsp;&nbsp;95014
+                </address>
+            </li>
+        </ul>
+
+        <hr>
+        &lt;&lt;&lt; &copy; Vaishak Menon &gt;&gt;&gt;
+    </body>
+
+</html>
+
+<!-- COMMENT TAG -->
+<!-- VSCode Simple Browser Web Address: http://127.0.0.1:5500/root/index.html -->
+
+<!--
+    ***************NOTES***************
+    File name expected to launch a website: index.html
+    Try to name using lowercase with no spaces
+
+    validator.w3.org: Website for validating HTML code
+    Code was run through validator.w3.org:
+    Immediate first errors:
+        Consider adding a lang attribute to the html start tag
+        Character encoding was not declared
+        Start tag was seen without seeing a doctype first
+    
+    "<html>" is a tag
+    "<html></html>" considered an element;
+        definition includes everything from starting tag, information contained, ending tag
+    Tag and element are often interchanged
+    head is the metadata tag; information not seen on website
+    
+    LESSON 1 CHANGES AND VALIDATION RESULTS
+
+    Adding "<!DOCTYPE html> "FIXES DOCTYPE ERROR | Must have for all html files
+    Adding "<html lang="en">" -US or -GB are also options ||| FIXES LANG ERROR
+    Adding "<meta charset="utf-8">" specifically 1024 bytes after beginning of document
+        FIXES CHARACTER ENCODING ERROR
+
+    LESSON 2 CHANGES AND VALIDATION RESULTS
+
+    Typical meta tags that contain metadata for the page
+
+    Added data to metadata such as name author and description
+    Used link tag to add favicon and sample stylesheet
+    Created File Structure for future lesson use
+
+    After validating, no errors
+
+    LESSON 3 CHANGES AND VALIDATION RESULTS
+
+    body tag; part that everyone sees
+    
+    Worked in the body tag
+    -   Used hr and br (horizontal line and line break)
+    -   Generally only have 1 "h1" tag
+    -   As many "h2", "h3", "hn" tags as you wish
+    -   General text or paragraphs go in the "p" tag
+    -   Formatting:
+        -   "em": Italics
+        -   "strong": Bold
+        -   abbr: Abbreviations
+        -   & is used for escaping or specific characters
+        -   address: Specifically used for addresses, auto-italicizes
+
+    After validating, no errors
+
+    LESSON 4 CHANGES AND VALIDATION RESULTS
+
+    List Types
+
+    Created three lists
+    "li": List Item
+
+    First: Ordered list
+    -   Uses "ol" and "li"
+    -   Starts at 1, has a little period at the end
+    Second: Unordered List
+    -   Uses "ul" and "li"
+    -   Creates a little dot
+    -   This page has extra space for the 
+        unordered list as the <p> tags were kept
+    Third: Description List
+    -   Uses "dl"
+    -   Description term; Topic; "dt"
+    -   Description details: Details; "dd"
+
+    After validating, no errors
+-->
