@@ -37,11 +37,11 @@ head is the metadata tag; information not seen on website
 
 ### **LESSON 1 CHANGES AND VALIDATION RESULTS**
 
-- Adding "\<!DOCTYPE html>" Must have for all html files
+- Adding \<!DOCTYPE html> Must have for all html files
   - FIXES DOCTYPE ERROR
-- Adding "\<html lang="en">" -US or -GB are also options
+- Adding \<html lang="en"> -US or -GB are also options
   - FIXES LANG ERROR
-- Adding "\<meta charset="utf-8">" specifically 1024 bytes after beginning of document
+- Adding \<meta charset="utf-8"> specifically 1024 bytes after beginning of document
   - FIXES CHARACTER ENCODING ERROR
 
 ### **LESSON 2 CHANGES AND VALIDATION RESULTS**
@@ -65,11 +65,11 @@ Worked in the body tag
 - As many "h2", "h3", "hn" tags as you wish
 - General text or paragraphs go in the "p" tag
 - Formatting:
-  - "em": Italics
-  - "strong": Bold
-  - abbr: Abbreviations
+  - \<em>: Italics
+  - \<strong>: Bold
+  - \<abbr>: Abbreviations
   - & is used for escaping or specific characters
-  - address: Specifically used for addresses, auto-italicizes
+  - \<addr>: Specifically used for addresses, auto-italicizes
 
 After validating, no errors
 
@@ -78,25 +78,25 @@ After validating, no errors
 List Types
 
 Created three lists
-"li": List Item
+\<li>: List Item
 
 First: Ordered list
 
-- Uses "ol" and "li"
+- Uses \<ol> and \<li>
 - Starts at 1, has a little period at the end
 
 Second: Unordered List
 
-- Uses "ul" and "li"
+- Uses \<ul> and \<li>
 - Creates a little dot
 - This page has extra space for the
-  unordered list as the <p> tags were kept
+  unordered list as the \<p> tags were kept
 
 Third: Description List
 
-- Uses "dl"
-- Description term; Topic; "dt"
-- Description details: Details; " dd"
+- Uses \<dl>
+- Description term; Topic; \<dt>
+- Description details: Details; \<dd>
 
 After validating, no errors
 
@@ -124,5 +124,35 @@ Link Rules:
 - Avoid "links to" phrase
 - Keep text short; Exact topic, not sentences.
 - No links that say "click here".
+
+After validating, no errors
+
+LESSON 6 CHANGES AND VALIDATION RESULTS
+
+IMAGES
+
+\<img> tag is used for images  
+Added src, alt, title, width, height, and loading attributes
+
+- src: Source for image file
+  - Ex: src="img/breakfast.png"
+- alt: Alternative description; Used when file is not found
+  - Ex: alt="Breakfast"
+- title: Title; Text seen when hovering over the image
+  - Ex: title="Beckfast"
+- width: Width of image
+  - Ex: width="125"
+- height: Height of image
+  - Ex: height="125"
+- loading: Loading style; Indicates loading method used: eager or lazy
+  - Eager loads the image before the page is loaded
+  - Lazy loads the image as the page is loaded
+  - Ex: loading="lazy"
+
+Used figures to encapsulate the image by itself  
+Figures should have a figcaption  
+Figcaption must occur at beginning or end of figure
+
+Figures can also be used for other uses such as the code block underneath Javascript
 
 After validating, no errors

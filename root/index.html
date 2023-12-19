@@ -28,9 +28,33 @@
             <p>4 Classes</p>
             <p><strong>Food:</strong></p>
             <ol>
-                <li><strong>Breakfast</strong></li>
-                <li><em>Lunch</em></li>
-                <li>Dinner</li>
+                <li>
+                    <strong>Breakfast</strong><br>
+                    <figure>
+                        <img src="img/breakfast.png" alt="Breakfast" title="Beckfast" width="125" height="125" loading="lazy">
+                        <figcaption>
+                            Breakfast that I would love to have in the morning!
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <em>Lunch</em><br>
+                    <figure>
+                        <img src="img/lunch.png" alt="Lunch" title="Lunch" width="125" height="125" loading="lazy">
+                        <figcaption>
+                            Looks like an average lunch.
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    Dinner<br>
+                    <figure>
+                        <img src="img/dinner.png" alt="Dinner" title="Dinner" width="125" height="125" loading="lazy">
+                        <figcaption>
+                            I love chicken! Or is it turkey?
+                        </figcaption>
+                    </figure>
+                </li>
             </ol>
 
             <p><strong>Other:</strong></p>
@@ -43,6 +67,7 @@
                 <li>Practice Programming</li>
             </ol>
         </section>
+
         <hr>
 
         <section id="aboutMeInfo">
@@ -53,7 +78,9 @@
             <h3>Projects I want to do:</h3>
             <dl>
                 <dt>Sudoku</dt>
-                <dd>Small web application project that displays Javascript abilities</dd>
+                <dd>Small web application project that displays Javascript abilities<br>
+                <img src="img/sudoku.png" alt="Sudoku" title="Sudoku" width="125" height="125" loading="lazy">
+                </dd>
 
                 <dt>Resume Portfolio</dt>
                 <dd>Personalized website to display my resume and projects</dd>
@@ -65,7 +92,17 @@
             <h3>Languages I want to learn:</h3>
             
             <ul>
-                <li><p>&nbsp;&nbsp;&nbsp;Javascript</p></li>
+                <li>
+                    <p>&nbsp;&nbsp;&nbsp;Javascript</p>
+                    <figure>
+                        <figcaption>Here is an example:</figcaption>
+                        <p>
+                            <code>// Hello World &nbsp;&nbsp;
+                            console.log('Hello World');
+                            </code>
+                        </p>
+                    </figure>
+                </li>
                 <li><p>&nbsp;&nbsp;&nbsp;Python</p></li>
                 <li><p>&nbsp;&nbsp;&nbsp;Heard this place teaches Swift well:</p>
                     <address>
@@ -85,22 +122,28 @@
 </html>
 
 <!--
-    ***************NOTES***************
-    LESSON 5 CHANGES AND VALIDATION RESULTS
+    *****************NOTES*****************
+    LESSON 6 CHANGES AND VALIDATION RESULTS
 
-    Links:
+    IMAGES
 
-    Absolute Links: Give direct path
-    Relative Links: Give relative path
-    Link Modifications: Add additional information to end of href
-        Example: download to download a file or target="_blank" for new page
+    <img> tag is used for images
+    Added src, alt, title, width, height, and loading attributes
+    
+    - src: Source for image file
+    - alt: Alternative description; Used when file is not found
+    - title: Title; Text seen when hovering over the image
+    - width: Width of image
+    - height: Height of image
+    - loading: Loading style; Indicates loading method used:   eager or lazy
+        - Eager loads the image before the page is loaded
+        - Lazy loads the image as the page is loaded
 
-    Link Rules:
+    Used figures to encapsulate the image by itself
+    Figures should have a figcaption
+    Figcaption must occur at beginning or end of figure
 
-    -   Avoid printing the full web address to the page
-    -   Avoid "links to" phrase
-    -   Keep text short; Exact topic, not sentences.
-    -   No links that say "click here".
+    Figures can also be used for other uses such as the code block underneath Javascript
 
     After validating, no errors
 -->
