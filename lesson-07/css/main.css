@@ -1,0 +1,20 @@
+/* Changed font size */
+html{
+    font-size:  22px
+}
+/* Changed background and text color */
+body {
+    background-color: #333;
+    color: whitesmoke;
+}
+
+/* Change color of anchor tag */
+a {
+    color: aliceblue
+}
+a:visited {
+    color: darkgray;
+}
+a:hover, a:active {
+    color: #eee;
+}

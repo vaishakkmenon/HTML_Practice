@@ -127,7 +127,7 @@ Link Rules:
 
 After validating, no errors
 
-LESSON 6 CHANGES AND VALIDATION RESULTS
+### **LESSON 6 CHANGES AND VALIDATION RESULTS**
 
 IMAGES
 
@@ -156,3 +156,24 @@ Figcaption must occur at beginning or end of figure
 Figures can also be used for other uses such as the code block underneath Javascript
 
 After validating, no errors
+
+### **LESSON 7 CHANGES AND VALIDATION RESULTS**
+
+Created hierarchy for headers
+Start with h1, then h2, h3 ... h6
+
+\<hr> is a semantic element; means topic change
+
+Semantic html makes it more accessible for screen readers  
+You can have more than one heading but must follow header semantics  
+Header tag does not do anything visually but adds backend meaning  
+Same for footer
+
+Label navs if there are more than one using aria-label="primary-nav"
+
+div and span have no meaning to html  
+We use them for CSS styling
+
+After validating:  
+1 error: \<p> tag on 135 wasn't closed, it was but accidently nested them causing issues  
+Removed \<p> tag as it was unnecessary
